@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Checkbox Template Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Checkbox Template Manager</h1>
+    
+    <div class="section">
+      <h2>Create Template</h2>
+      <div class="form-group">
+        <input type="text" id="templateName" placeholder="Template name">
+        <button id="saveTemplate">Save Current State</button>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2>Saved Templates</h2>
+      <div id="templateList" class="template-list">
+        <!-- Templates will be listed here dynamically -->
+        <div class="empty-message">No templates saved yet</div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2>Template Actions</h2>
+      <div class="template-actions">
+        <select id="templateSelect">
+          <option value="">Select a template</option>
+          <!-- Options will be populated dynamically -->
+        </select>
+        <button id="applyTemplate">Apply Template</button>
+        <button id="deleteTemplate">Delete Template</button>
+      </div>
+    </div>
+    
+    <div id="status" class="status"></div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

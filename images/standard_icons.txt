@@ -1,0 +1,54 @@
+# Standard Icons for Chrome Extension
+
+Since we're having trouble creating binary icon files directly, here are instructions to create standard icons for your Chrome extension:
+
+## Option 1: Use Simple Colored Squares
+
+1. Open an image editor like Paint, GIMP, or Photoshop
+2. Create new images with the following dimensions:
+   - 16x16 pixels (save as icon16.png)
+   - 48x48 pixels (save as icon48.png)
+   - 128x128 pixels (save as icon128.png)
+3. Fill each image with a solid color (e.g., blue, green, or any color you prefer)
+4. Save the images in PNG format with the exact filenames mentioned above
+5. Place these files in the "images" directory of your extension
+
+## Option 2: Download Standard Icons
+
+You can download standard checkbox icons from various icon websites:
+
+1. Visit one of these websites:
+   - https://www.flaticon.com/free-icons/checkbox
+   - https://icon-icons.com/search/checkbox
+   - https://www.iconfinder.com/search?q=checkbox
+
+2. Download icons in the required sizes (16x16, 48x48, 128x128)
+3. Rename them to match the required filenames (icon16.png, icon48.png, icon128.png)
+4. Place these files in the "images" directory of your extension
+
+## Option 3: Use the HTML Generator
+
+You can use the generate_icons.html file we've already created:
+
+1. Open the generate_icons.html file in a web browser
+2. Right-click on each canvas and select "Save Image As..."
+3. Save each image with the correct name (icon16.png, icon48.png, icon128.png)
+4. Place these files in the "images" directory of your extension
+
+## Option 4: Convert the SVG Icon
+
+We've created an SVG icon (icon.svg) that you can convert to the required PNG files:
+
+1. Open the icon.svg file in a web browser or image editor that supports SVG
+2. Export or save the image as PNG in the following sizes:
+   - 16x16 pixels (save as icon16.png)
+   - 48x48 pixels (save as icon48.png)
+   - 128x128 pixels (save as icon128.png)
+3. Place these files in the "images" directory of your extension
+
+You can also use online converters like:
+- https://svgtopng.com/
+- https://convertio.co/svg-png/
+- https://cloudconvert.com/svg-to-png
+
+After adding these icon files, your extension should load correctly.

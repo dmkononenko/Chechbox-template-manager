@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Checkbox Template Manager",
+  "version": "1.0",
+  "description": "Create and apply templates for checkbox configurations",
+  "permissions": ["storage", "activeTab", "scripting", "contextMenus"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
